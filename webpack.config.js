@@ -1,17 +1,29 @@
-var path = require('path');
+const distFolder = __dirname + '/dist';
+const sourceFolder = './src';
+
+console.log(sourceFolder + '/js/app.js')
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: sourceFolder + '/js/app.js',
   output: {
-    filename: 'app.js',
-    path: path.resolve(__dirname, 'dist')
+    path: distFolder + '/js',
+    filename: 'app.bundle.js',
   },
   module: {
+    loaders: {
+      test: /\.js$/,
+      loader: '',
+    },
     rules: [{
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
-          'style-loader',
-          'css-loader'
+          {
+            loader: 'style-loader'
+          }, {
+            loader: 'css-loader'
+          }, {
+            loader: 'sass-loader'
+          }
         ]
     }]
   }
