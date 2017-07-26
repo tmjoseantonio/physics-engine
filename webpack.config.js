@@ -10,21 +10,21 @@ module.exports = {
     filename: 'app.bundle.js',
   },
   module: {
-    loaders: {
-      test: /\.js$/,
-      loader: '',
-    },
-    rules: [{
+    rules: [
+      {
         test: /\.scss$/,
         use: [
           {
             loader: 'style-loader'
-          }, {
+          },
+          {
             loader: 'css-loader'
-          }, {
+          },
+          {
             loader: 'sass-loader'
           }
         ]
-    }]
+      }
+    ]
   }
 };
