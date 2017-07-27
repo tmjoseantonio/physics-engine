@@ -17,7 +17,7 @@ In the browser open the following url: http://0.0.0.0:8080
 
 ## Research notes:
 ### Reference Material:
--Coding math: Vectors
+- Coding math: Vectors
 https://youtu.be/DfGOw8_ZaBA
 
 - The Coding Train: 5.0a: Introduction to Physics Engines Part 1 - The Nature of Code
