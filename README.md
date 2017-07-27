@@ -3,7 +3,27 @@ A simple Javascript based physics engine attempt.
 
 The objective for this repository is for me to run explorations to understand better the physics involved in 2D games and computed simulations.
 
-## Research material:
+## Getting started:
+Install requirements:
+```shell
+npm i -g yarn watch-http-server
+```
+
+Run the server:
+```shell
+yarn develop
+```
+In the browser open the following url: http://0.0.0.0:8080
+
+## Research notes:
+### Code challenges:
+1. Vectors
+WIP
+
+### Reference Material:
+- Coding math: Vectors
+https://youtu.be/DfGOw8_ZaBA
+
 - The Coding Train: 5.0a: Introduction to Physics Engines Part 1 - The Nature of Code
 https://www.youtube.com/watch?v=wB1pcXtEwIs
 
@@ -13,9 +33,6 @@ https://gamedevelopment.tutsplus.com/tutorials
 - How to Create a Custom 2D Physics Engine: The Basics and Impulse Resolution
 https://gamedevelopment.tutsplus.com/tutorials/how-to-create-a-custom-2d-physics-engine-the-basics-and-impulse-resolution--gamedev-6331
 
-## Reference material:
-- MatterJS:
-https://github.com/liabru/matter-js
-
-- Box2D:
-https://github.com/erincatto/Box2D
+## About the author:
+[Jose Tovar](http://tmjoseantonio.com)
+*Web Engineer, husband, gamer and a terrible musician*
