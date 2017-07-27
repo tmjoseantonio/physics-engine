@@ -16,6 +16,10 @@ yarn develop
 In the browser open the following url: http://0.0.0.0:8080
 
 ## Research notes:
+### Code challenges:
+1. Vectors
+WIP
+
 ### Reference Material:
 - Coding math: Vectors
 https://youtu.be/DfGOw8_ZaBA
