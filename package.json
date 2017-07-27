@@ -7,20 +7,9 @@
   "author": "Jose Tovar <tmjoseantonio@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
-    "develop": "webpack-dev-server",
-    "lint:js": "eslint app/ webpack.*.js --cache"
+    "develop": "watch-http-server dist/"
   },
   "devDependencies": {
-    "css-loader": "^0.28.4",
-    "eslint": "^4.3.0",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-loader": "^1.9.0",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "typescript": "^2.4.2",
-    "webpack": "^3.3.0",
-    "webpack-dev-server": "^2.6.1"
+    "watch-http-server": "^0.7.6"
   }
 }
