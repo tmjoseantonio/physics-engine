@@ -1,0 +1,29 @@
+{
+  "name": "physics-engine",
+  "version": "1.0.0",
+  "description": "A javascript based physics engine",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^3.6.0",
+    "yarn": "^1.1.0"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmjoseantonio/physics-engine.git"
+  },
+  "keywords": [
+    "physics",
+    "engine"
+  ],
+  "author": "Jose Antonio Tovar Moreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmjoseantonio/physics-engine/issues"
+  },
+  "homepage": "https://github.com/tmjoseantonio/physics-engine#readme"
+}

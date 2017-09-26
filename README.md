@@ -1,9 +1,6 @@
 # physics-engine
 A simple Javascript based physics engine attempt.
 
-[![npm](https://img.shields.io/npm/v/npm.svg)]()
-[![node](https://img.shields.io/node/v/gh-badges.svg)]()
-
 The objective for this repository is for me to run explorations to understand better the physics involved in 2D games and computed simulations.
 
 ## Getting started:
