@@ -1,6 +1,9 @@
 # physics-engine
 A simple Javascript based physics engine attempt.
 
+[![npm](https://img.shields.io/npm/v/npm.svg)]()
+[![node](https://img.shields.io/node/v/gh-badges.svg)]()
+
 The objective for this repository is for me to run explorations to understand better the physics involved in 2D games and computed simulations.
 
 ## Getting started:
@@ -11,14 +14,13 @@ npm i -g yarn watch-http-server
 
 Run the server:
 ```shell
-yarn develop
+yarn run start
 ```
 In the browser open the following url: http://0.0.0.0:8080
 
 ## Research notes:
 ### Code challenges:
-1. Vectors
-WIP
+1. Vectors (Current WIP)
 
 ### Reference Material:
 - Coding math: Vectors
