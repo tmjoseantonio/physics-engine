@@ -1,13 +1,16 @@
 const path = require('path');
 
-const DIST_PATH = path.resolve( __dirname, 'dist' );
-const SOURCE_PATH = path.resolve( __dirname, 'src' );
+const DIST_PATH = path.resolve( __dirname, './dist' );
+const SOURCE_PATH = path.resolve( __dirname, './app' );
 
 module.exports = {
-  entry: './app/index.ts',
+  entry: './app/ts/index.ts',
   output: {
     filename: 'bundle.js',
-    path: DIST_PATH
+    path: `${DIST_PATH}/js`
+  },
+  devServer: {
+    contentBase: DIST_PATH,
   },
   module: {
     loaders: [{
@@ -15,14 +18,12 @@ module.exports = {
       loader: 'ts-loader'
     }],
     rules: [{
-      test: /\.js$/,
-      exclude: [/node_modules/],
-      use: [{
-        loader: 'babel-loader',
-        options: {
-          presets: ['es2015'],
-        },
-      }],
+      test: /\.scss$/,
+      use: [
+        { loader: "style-loader" },
+        { loader: "css-loader" },
+        { loader: "sass-loader" }
+      ]
     }]
   }
 };

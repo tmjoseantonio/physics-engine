@@ -6,20 +6,21 @@ The objective for this repository is for me to run explorations to understand be
 ## Getting started:
 This project was build using Typescript: https://www.typescriptlang.org/index.html#download-links
 
-Install global requirements:
-```shell
-npm i -g yarn watch-http-server typescript
-```
-
 Install project dependencies:
 ```shell
 yarn install
 ```
 
-Run the server:
+Run Typescript:
 ```shell
-yarn run start
+yarn run autotsc
 ```
+
+Run Webpack server
+```shell
+yarn run build-dev
+```
+
 In the browser open the following url: http://0.0.0.0:8080
 
 ## Research notes:
