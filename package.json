@@ -1,31 +1,20 @@
 {
   "name": "physics-engine",
   "version": "1.0.0",
-  "description": "A javascript based physics engine",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "babel-loader": "^7.1.2",
-    "jest": "^21.2.1",
-    "webpack": "^3.6.0",
-    "yarn": "^1.1.0"
-  },
+  "repository": "git@github.com:tmjoseantonio/physics-engine.git",
+  "author": "Jose Tovar <tmjoseantonio@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "webpack --config webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc app/*.ts --target ES5 --outFile dist/bundle.js",
+    "autotsc": "tsc --watch app/*.ts --target ES5 --outFile dist/bundle.js",
+    "build-dev": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --hot --inline --colors --progress --content-base src/",
+    "build-prod": "webpack -p && cp src/index.html dist/index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tmjoseantonio/physics-engine.git"
-  },
-  "keywords": [
-    "physics",
-    "engine"
-  ],
-  "author": "Jose Antonio Tovar Moreno",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tmjoseantonio/physics-engine/issues"
-  },
-  "homepage": "https://github.com/tmjoseantonio/physics-engine#readme"
+  "dependencies": {
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.3",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
 }
