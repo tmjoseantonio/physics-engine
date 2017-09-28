@@ -4,9 +4,16 @@ A simple Javascript based physics engine attempt.
 The objective for this repository is for me to run explorations to understand better the physics involved in 2D games and computed simulations.
 
 ## Getting started:
-Install requirements:
+This project was build using Typescript: https://www.typescriptlang.org/index.html#download-links
+
+Install global requirements:
 ```shell
-npm i -g yarn watch-http-server
+npm i -g yarn watch-http-server typescript
+```
+
+Install project dependencies:
+```shell
+yarn install
 ```
 
 Run the server:
